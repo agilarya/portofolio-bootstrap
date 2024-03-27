@@ -43,6 +43,11 @@ section .section-title {
     color: white;
 }
 
+.btn-orange:hover{
+    background-color: var(--dark-color);
+    color: white;
+}
+
 .text-orange {
     color: var(--primary-color)
 }
@@ -107,7 +112,7 @@ section .section-title {
 }
 
 /*Ability*/
-.ability-section{
+.ability-section, footer {
     background-color: var(--dark-color);
 }
 
@@ -120,4 +125,17 @@ section .section-title {
 
 .ability-section .progress-bar .progress{
     background-color: var(--primary-color);
+}
+
+/*Publication*/
+.publication-section .card .card-img-top{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and(max-width: 768px){
+    .publication-section .card .card-img-top{
+        height: 100px;
+    }
 }
